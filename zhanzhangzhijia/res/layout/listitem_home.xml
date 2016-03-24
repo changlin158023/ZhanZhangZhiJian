@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="320dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white" >
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/selector_checkbox_ok"
+            android:button="@null"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvproduct"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="友情链接"
+            android:textColor="@color/dark_gray" />
+
+        <TextView
+            android:id="@+id/tvweb"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="阿里巴巴"
+            android:textColor="@color/dark_gray" />
+
+        <TextView
+            android:id="@+id/tvweight"
+            android:layout_width="31dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="8"
+            android:textColor="@color/dark_gray" />
+
+        <TextView
+            android:id="@+id/tvpr"
+            android:layout_width="31dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="6"
+            android:textColor="@color/dark_gray" />
+
+        <TextView
+            android:id="@+id/tvprice"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="¥12.00/月"
+            android:textColor="@color/dark_gray" />
+
+        <TextView
+            android:id="@+id/tvgo"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btnblue"
+            android:clickable="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="购买"
+            android:textColor="@color/light_blue" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/LinearLayout2"
+        android:background="@color/gray" />
+
+</RelativeLayout>

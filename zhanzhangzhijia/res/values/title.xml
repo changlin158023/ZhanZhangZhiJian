@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="title">
+        <item>开发建议</item>
+        <item>网站优化建议</item>
+        <item>商务合作</item>
+        <item>其它相关问题</item>
+    </string-array>
+
+</resources>

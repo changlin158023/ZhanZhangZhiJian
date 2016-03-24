@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="ranking">
+        <item>全部网站</item>
+        <item>休闲娱乐</item>
+        <item>校园高校</item>
+    </string-array>
+
+</resources>

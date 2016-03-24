@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/bankname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/bankimage"
+        android:singleLine="true"
+        android:text="建设银行"
+        android:textColor="@color/dark_gray"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/banknum"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/bankimage"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="王小丫" />
+
+    <TextView
+        android:id="@+id/banknum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bankimage"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@+id/bankname"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="TextView" />
+
+    <ImageView
+        android:id="@+id/bankimage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp"
+        android:src="@drawable/logo1" />
+
+</RelativeLayout>

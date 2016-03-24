@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wlhl.zhanzhangzhijia"
+    android:versionCode="1"
+    android:versionName="1.1.1" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+    <!-- 友盟  必选 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- 【必选】友盟   用以设置前台是否显示通知 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo1"
+        android:label="@string/app_name"
+        android:theme="@style/MyTheme" >
+        <activity
+            android:name="com.wlhl.zhanzhangzhijia.WelcomeActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.wlhl.zhanzhangzhijia.GuideActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wlhl.zhanzhangzhijia.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnchanged|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.wlhl.zhanzhangzhijia.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnchanged|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.wlhl.zhanzhangzhijia.ForgetActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnchanged|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.wlhl.zhanzhangzhijia.HomeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnchanged|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.wlhl.zhanzhangzhijia.ClauseActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wlhl.zhanzhangzhijia.HomeActivity2"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wlhl.zhanzhangzhijia.MessageActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wlhl.zhanzhangzhijia.SettingActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnchanged|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.wlhl.zhanzhangzhijia.AccountActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnchanged|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.wlhl.zhanzhangzhijia.InformationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.wlhl.zhanzhangzhijia.SeoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnchanged|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.wlhl.zhanzhangzhijia.RechargehistoryActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnchanged|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.wlhl.zhanzhangzhijia.RefundhistoryActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnchanged|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.wlhl.zhanzhangzhijia.RefundActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnchanged|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.wlhl.zhanzhangzhijia.IntroductionActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wlhl.zhanzhangzhijia.FeedbackActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnchanged|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.wlhl.zhanzhangzhijia.AboutActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wlhl.zhanzhangzhijia.BuyActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wlhl.zhanzhangzhijia.OrdersActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wlhl.zhanzhangzhijia.DetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wlhl.zhanzhangzhijia.BreakdownActivity"
+            android:windowSoftInputMode="stateUnchanged|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.wlhl.zhanzhangzhijia.SpreadActivity"
+            android:windowSoftInputMode="stateUnchanged|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.wlhl.zhanzhangzhijia.WebInfoActivity"
+            android:windowSoftInputMode="stateUnchanged|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.wlhl.zhanzhangzhijia.WebRanking"
+            android:windowSoftInputMode="stateUnchanged|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.wlhl.zhanzhangzhijia.BuySettingActivity"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.wlhl.zhanzhangzhijia.WithdrawCashActivity"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.wlhl.zhanzhangzhijia.FlowPurchaseActivity"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.wlhl.zhanzhangzhijia.BreakdownOkActivity"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.wlhl.zhanzhangzhijia.OrderLogActivity"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.wlhl.zhanzhangzhijia.NewPurchaseActivity"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.wlhl.zhanzhangzhijia.PayOkActivity"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.wlhl.zhanzhangzhijia.BuySetActivity"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+    </application>
+
+</manifest>

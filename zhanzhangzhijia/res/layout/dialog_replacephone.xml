@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp" 
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="@color/dark_gray"
+        android:text="更改手机号码" />
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <EditText
+                android:id="@+id/etphonenum"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/shape_edittext"
+                android:hint="新手机号码"
+                android:inputType="number"
+                android:maxLength="11"
+                android:paddingLeft="10dp"
+			    android:paddingRight="30dp"
+                android:singleLine="true"
+                android:textSize="14sp" >
+
+            </EditText>
+
+			<ImageView
+			    android:id="@+id/imdelete1"
+			    android:layout_width="30dp"
+			    android:layout_height="30dp"
+			    android:layout_alignRight="@+id/etphonenum"
+			    android:layout_centerVertical="true"
+			    android:src="@drawable/icon_guanbi"
+			    android:visibility="invisible" />
+
+        </RelativeLayout>
+        <LinearLayout
+                android:id="@+id/linear3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/tv3"
+                android:background="@color/white" >
+
+            <EditText
+                android:id="@+id/etsalt"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_edittext"
+                android:maxLength="4"
+                android:hint="图片验证码"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textSize="14sp" >
+            </EditText>
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray" />
+			<ImageView
+                    android:id="@+id/imsalt"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/selector_btnwhite"
+                    android:gravity="center"
+                    android:src="@color/gray"
+                    android:textColor="@color/dark_gray" />
+
+            </LinearLayout>
+		<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <EditText
+                android:id="@+id/etverification"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:layout_gravity="center"
+                android:background="@drawable/shape_edittext"
+                android:hint="手机验证码"
+                android:textSize="14sp"
+                android:inputType="number"
+                android:maxLength="6" >
+            </EditText>
+			<TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray" />
+
+			<TextView
+                    android:id="@+id/tvverification"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/shape_edittext"
+                    android:gravity="center"
+                    android:src="@drawable/icon_guanbi"
+                    android:text="获取验证码"
+                    android:textSize="16sp"
+                    android:textColor="@color/dark_gray" />
+        </LinearLayout>
+    </LinearLayout>
+	<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/linear1"
+            android:background="@color/gray" >
+
+            <TextView
+                android:id="@+id/tvcancel"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/selector_btnblue"
+                android:text="@string/取消" />
+
+            <TextView
+                android:id="@+id/tvsend"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/selector_mainbtn"
+                android:textColor="@color/white"
+                android:text="@string/确定">
+            </TextView>
+
+        </LinearLayout>
+</RelativeLayout>

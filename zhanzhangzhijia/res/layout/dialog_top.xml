@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="240dp"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="30.0dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="10.0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout1" >
+    </RelativeLayout>
+
+    
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="0.01dp"
+        android:layout_alignLeft="@+id/topmoneylayout"
+        android:layout_alignRight="@+id/topmoneylayout"
+        android:layout_alignTop="@+id/topmoneylayout"
+        android:background="@color/black" />
+
+    <RelativeLayout
+        android:id="@+id/title1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/title" >
+
+        <TextView
+            android:id="@+id/topname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_toRightOf="@+id/textView1"
+            android:gravity="left"
+            android:text="asdasdas"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:gravity="left"
+            android:paddingRight="10.0dp"
+            android:text="用户名:"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/topname"
+            android:layout_alignBottom="@+id/topname"
+            android:layout_toRightOf="@+id/topname"
+            android:paddingLeft="30.0dp"
+            android:paddingRight="10.0dp"
+            android:text="余额:"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:id="@+id/topbalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView3"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_toRightOf="@+id/textView3"
+            android:gravity="left"
+            android:text="saddasd"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/title2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/title1"
+        android:layout_centerHorizontal="true" >
+
+        <TextView
+            android:id="@+id/topmoney"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/textView4"
+            android:background="@drawable/shape_edittext_1"
+            android:gravity="center"
+            android:textSize="16.0sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/topmoney"
+            android:layout_alignBottom="@+id/topmoney"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:text="充值金额:"
+            android:textSize="16.0sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/title3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/title2" >
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="54.0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/title3"
+        android:background="@color/gray" >
+
+        <TextView
+            android:id="@+id/top_tvcancel"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btnblue"
+            android:gravity="center"
+            android:text="取消" />
+
+        <TextView
+            android:id="@+id/top_tvok"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_mainbtn"
+            android:gravity="center"
+            android:text="充值"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink"
+    android:orientation="vertical" >
+	<LinearLayout
+        android:id="@+id/LinearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/shape_edittext" >
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:button="@null"
+            android:layout_marginLeft="5dp"
+            android:visibility="gone"
+            android:background="@drawable/selector_checkbox_ok"/>
+
+        <TextView
+            android:id="@+id/tvproduct"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:singleLine="true"
+            android:layout_weight="1"
+            android:text="流量产品" />
+
+        <TextView
+            android:id="@+id/tvweb"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="服务站" />
+
+        <TextView
+            android:id="@+id/tvweight"
+            android:layout_width="31dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="权重" />
+
+        <TextView
+            android:id="@+id/tvpr"
+            android:layout_width="31dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="PR" />
+
+        <TextView
+            android:id="@+id/tvprice"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="价格" />
+
+        <TextView
+            android:id="@+id/tvgo"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="操作" />
+    </LinearLayout>
+
+</LinearLayout>
